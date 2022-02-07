@@ -15,7 +15,7 @@
 
 .Body {
   background-color: #2850a8;
-  min-height: 85vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: row;
   align-items: top;
@@ -24,8 +24,15 @@
   color: white;
 }
 
+.list {
+  background-color: #2850a8;
+  min-height: 75vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
 .entryBox {
-  height: 5vh;
+  height: 3vh;
   width:25vw;
   display: flex;
   flex-direction: row;
@@ -35,15 +42,9 @@
   color: rgb(7, 7, 7);
 }
 
-.addButton {
-  height: 6vh;
-  width:5vw;
-  display: flex;
-  flex-direction: row;
-  align-items: top;
-  justify-content: flex-start;
-  font-size: calc(10px +.5vmin);
-  color: rgb(7, 7, 7);
+.pic {
+  height: 3vh;
+  width: 3vh;
 }
 
 .Footer {
