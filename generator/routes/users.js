@@ -41,8 +41,8 @@ router.post('/:id', function(req, res, next) {
       res.json(student);
     }
   }
-  res.send("Cannot find student");
-});
+  res.send("Cannot find  student");
+}); 
 
 router.delete('/:id', function(req, res, next) {
   var id = req.params.id;
