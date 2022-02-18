@@ -1,58 +1,58 @@
 var express = require('express');
 var router = express.Router();
 
-var users = [
+var students = [
   {"id":1, "name":"Joel"},
   {"id":2, "name":"Katie"}
 ]
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.json(users);
+  res.json(students);
 });
 
 router.get('/:id', function(req, res, next) {
   var id = req.params.id;
   console.log(id);
-  for(let user of users){
-    if(user.id == id){
-      res.json(user);
+  for(let student of students){
+    if(student.id == id){
+      res.json(student);
     }
   }
-  res.send("Cannot find user");
+  res.send("Cannot find student");
 });
 
 router.put('/:id', function(req, res, next) {
   var id = req.params.id;
   console.log(id);
-  for(let user of users){
-    if(user.id == id){
-      res.json(user);
+  for(let student of students){
+    if(student.id == id){
+      res.json(student);
     }
   }
-  res.send("Cannot find user");
+  res.send("Cannot find student");
 });
 
 router.post('/:id', function(req, res, next) {
   var id = req.params.id;
   console.log(id);
-  for(let user of users){
-    if(user.id == id){
-      res.json(user);
+  for(let student of students){
+    if(student.id == id){
+      res.json(student);
     }
   }
-  res.send("Cannot find user");
+  res.send("Cannot find student");
 });
 
 router.delete('/:id', function(req, res, next) {
   var id = req.params.id;
   console.log(id);
-  for(let user of users){
-    if(user.id == id){
-      res.json(user);
+  for(let student of students){
+    if(student.id == id){
+      res.json(student);
     }
   }
-  res.send("Cannot find user");
+  res.send("Cannot find student");
 });
 
 module.exports = router;
